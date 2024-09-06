@@ -1,42 +1,20 @@
-import { ethers } from "hardhat";
-
 async function main() {
+	const [deployer] = await ethers.getSigners();
+	console.log("Deploying contracts with the account:", deployer.address);
 
-  const Random = await ethers.getContractFactory("Random");
-  const random = await Random.deploy();
-  await random.deployed();
+	const CoinFlip = await ethers.getContractFactory("CoinFlip");
+	const coinFlip = await CoinFlip.deploy(
+		"67290033934515025777456143001470391964895190346375434393344356362633963775246", // Subscription ID as a string
+		"0x84b9B910527Ad5C03A9Ca831909E21e236EA7b06", // vrfCoordinator
+		"0xcaf3c3727e033261d383b315559476f48034c13b18f8cafed4d871abe5049186" // keyHash
+	);
 
-  console.log(
-    `Smart contract deployed to ${random.address}`
-  );
-  
+	console.log("CoinFlip deployed to:", coinFlip.address);
 }
 
-// We recommend this pattern to be able to use async/await everywhere
-// and properly handle errors.
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
-
-
-
-// const { ethers, network } = require("hardhat");
-
-// async function main() {
-//     const [deployer] = await ethers.getSigners();
-//     console.log("Deploying contracts with the account:", deployer.address);
-
-//     const VRFExample = await ethers.getContractFactory("VRFExample");
-//     const vrfCoordinator = "0x9DdfaCa8183c41ad55329BdeeD9F6A8d53168B1B";
-//     const keyHash = "0x787d74caea10b2b357790d5b5247c2f63d1d91572a9846f780606e4d953677ae";
-//     const subscriptionId = 1;
-
-//     const vrfExample = await VRFExample.deploy(vrfCoordinator, keyHash, subscriptionId);
-//     console.log("VRFExample deployed to:", vrfExample.address);
-// }
-
-// main().catch((error) => {
-//     console.error(error);
-//     process.exitCode = 1;
-// });
+main()
+	.then(() => process.exit(0))
+	.catch((error) => {
+		console.error(error);
+		process.exit(1);
+	});
