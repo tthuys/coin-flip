@@ -1,0 +1,61 @@
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #f0f0f0;
+}
+
+.container {
+	text-align: center;
+}
+
+.coin {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	margin: 20px auto;
+	perspective: 1000px;
+}
+
+.side {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	backface-visibility: hidden;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: gold;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.heads {
+	transform: rotateY(0deg);
+}
+
+.tails {
+	transform: rotateY(180deg);
+}
+
+#coin {
+	transform-style: preserve-3d;
+	transition: transform 2s;
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+#result {
+	margin-top: 20px;
+	font-size: 20px;
+	font-weight: bold;
+}
