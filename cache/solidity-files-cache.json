@@ -1,7 +1,7 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "C:\\Users\\Sawashi\\Desktop\\smart_contract\\chainlink-vrf-coinflip\\contracts\\CoinFlip.sol": {
+    "C:\\Users\\Sawashi\\Desktop\\flipcoin\\contracts\\CoinFlip.sol": {
       "lastModificationDate": 1725634743890,
       "contentHash": "06a4ea9a7a369f2c51084cb36ae6b46d",
       "sourceName": "contracts/CoinFlip.sol",
@@ -18,7 +18,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ],
               "": [
                 "ast"
@@ -39,76 +40,8 @@
         "CoinFlip"
       ]
     },
-    "C:\\Users\\Sawashi\\Desktop\\smart_contract\\chainlink-vrf-coinflip\\node_modules\\@chainlink\\contracts\\src\\v0.8\\VRFConsumerBaseV2.sol": {
-      "lastModificationDate": 1725630685656,
-      "contentHash": "eb9cc526ef59dfc4d644f56ddca0633a",
-      "sourceName": "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol",
-      "solcConfig": {
-        "version": "0.8.7",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.4"
-      ],
-      "artifacts": [
-        "VRFConsumerBaseV2"
-      ]
-    },
-    "C:\\Users\\Sawashi\\Desktop\\smart_contract\\chainlink-vrf-coinflip\\node_modules\\@chainlink\\contracts\\src\\v0.8\\interfaces\\VRFCoordinatorV2Interface.sol": {
-      "lastModificationDate": 1725630685727,
-      "contentHash": "8c9ed3426b676f67ee200a2bec96e224",
-      "sourceName": "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol",
-      "solcConfig": {
-        "version": "0.8.7",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "VRFCoordinatorV2Interface"
-      ]
-    },
-    "C:\\Users\\Sawashi\\Desktop\\smart_contract\\chainlink-vrf-coinflip\\node_modules\\@chainlink\\contracts\\src\\v0.8\\ConfirmedOwner.sol": {
-      "lastModificationDate": 1725630684219,
+    "C:\\Users\\Sawashi\\Desktop\\flipcoin\\node_modules\\@chainlink\\contracts\\src\\v0.8\\ConfirmedOwner.sol": {
+      "lastModificationDate": 1725792387653,
       "contentHash": "16d64572b0310127fc8a771e63be6d20",
       "sourceName": "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol",
       "solcConfig": {
@@ -124,7 +57,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ],
               "": [
                 "ast"
@@ -143,8 +77,78 @@
         "ConfirmedOwner"
       ]
     },
-    "C:\\Users\\Sawashi\\Desktop\\smart_contract\\chainlink-vrf-coinflip\\node_modules\\@chainlink\\contracts\\src\\v0.8\\ConfirmedOwnerWithProposal.sol": {
-      "lastModificationDate": 1725630684224,
+    "C:\\Users\\Sawashi\\Desktop\\flipcoin\\node_modules\\@chainlink\\contracts\\src\\v0.8\\VRFConsumerBaseV2.sol": {
+      "lastModificationDate": 1725792394203,
+      "contentHash": "eb9cc526ef59dfc4d644f56ddca0633a",
+      "sourceName": "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "VRFConsumerBaseV2"
+      ]
+    },
+    "C:\\Users\\Sawashi\\Desktop\\flipcoin\\node_modules\\@chainlink\\contracts\\src\\v0.8\\interfaces\\VRFCoordinatorV2Interface.sol": {
+      "lastModificationDate": 1725792394601,
+      "contentHash": "8c9ed3426b676f67ee200a2bec96e224",
+      "sourceName": "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "VRFCoordinatorV2Interface"
+      ]
+    },
+    "C:\\Users\\Sawashi\\Desktop\\flipcoin\\node_modules\\@chainlink\\contracts\\src\\v0.8\\ConfirmedOwnerWithProposal.sol": {
+      "lastModificationDate": 1725792387841,
       "contentHash": "8b1c5f02622cd87472493bda6595d1be",
       "sourceName": "@chainlink/contracts/src/v0.8/ConfirmedOwnerWithProposal.sol",
       "solcConfig": {
@@ -160,7 +164,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ],
               "": [
                 "ast"
@@ -179,8 +184,8 @@
         "ConfirmedOwnerWithProposal"
       ]
     },
-    "C:\\Users\\Sawashi\\Desktop\\smart_contract\\chainlink-vrf-coinflip\\node_modules\\@chainlink\\contracts\\src\\v0.8\\interfaces\\OwnableInterface.sol": {
-      "lastModificationDate": 1725630685419,
+    "C:\\Users\\Sawashi\\Desktop\\flipcoin\\node_modules\\@chainlink\\contracts\\src\\v0.8\\interfaces\\OwnableInterface.sol": {
+      "lastModificationDate": 1725792392191,
       "contentHash": "2e814c8a9f77897f6995436d97c23d99",
       "sourceName": "@chainlink/contracts/src/v0.8/interfaces/OwnableInterface.sol",
       "solcConfig": {
@@ -196,7 +201,8 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ],
               "": [
                 "ast"
